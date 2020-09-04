@@ -1,0 +1,2 @@
+module cmp326 {
+}

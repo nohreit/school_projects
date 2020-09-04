@@ -1,0 +1,25 @@
+orc
+dead
+0
+10
+0
+0
+false
+small room
+skeleton
+stink
+35
+10
+6
+1
+false
+medium room
+dragon
+large
+100
+20
+30
+2
+true
+huge room
+a large pile of gold

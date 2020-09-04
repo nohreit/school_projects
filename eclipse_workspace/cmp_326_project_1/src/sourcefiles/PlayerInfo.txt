@@ -1,0 +1,5 @@
+Kratos
+A powerful warrior
+100
+15
+30

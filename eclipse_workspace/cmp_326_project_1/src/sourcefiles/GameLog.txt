@@ -1,0 +1,5 @@
+Kratos
+Room 1 cleared
+Room 2 cleared
+Kratos died...
+THE END
