@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nohreit/Git/Qt-workspace/practice_1/main.cpp
+iostream
+-
+string
+-
+object.h
+/home/nohreit/Git/Qt-workspace/practice_1/object.h
+
+/home/nohreit/Git/Qt-workspace/practice_1/object.h
+string
+-
+

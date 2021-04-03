@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<UIP version="6" >
+	<Project >
+		<ProjectSettings author="" company="" presentationWidth="1920" presentationHeight="1080" maintainAspect="False" preferKtx="False" flipCompressedTextures="False" >
+			<CustomColors count="16" >#ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff #ffffff</CustomColors>
+		</ProjectSettings>
+		<Graph >
+			<Scene id="Scene_u39250" >
+				<Layer id="Layer_u20880" variants="" >
+					<Camera id="Camera_u34857" />
+					<Light id="Light_u42730" />
+				</Layer>
+			</Scene>
+		</Graph>
+		<Logic >
+			<State name="Master Slide" component="#Scene_u39250" >
+				<Add ref="#Layer_u20880" />
+				<Add ref="#Camera_u34857" />
+				<Add ref="#Light_u42730" />
+				<State id="Scene-Slide1_u5948" name="Slide1" />
+			</State>
+		</Logic>
+	</Project>
+</UIP>

@@ -1,0 +1,74 @@
+package Code.Nodes.Trees;
+
+public class BinarySearchTree<T extends KeyedItem<KT>,
+        KT extends Comparable<? super KT>>
+        extends BinarySearchTree<T>{
+
+
+    public BinarySearchTree(T rootItem){
+        super(rootItem);
+    }
+
+
+    @Override
+    public void setRootItem(T item) throws TreeException {
+//		super.setRootItem(item);
+        throw new TreeException("root was set at construction... "
+                + "we don't want to mess up the ordering");
+    }
+
+    @Override
+    public void insert(T item){
+        root = insertItem(root, item);
+    }
+
+    private TreeNode<T> insertItem(TreeNode<T> theNode, T item) {
+        TreeNode<T> newSubTree;
+        if(theNode == null){//insert after the leaf
+            theNode = new TreeNode<T>(item, null, null);
+            return theNode;
+        }
+        T nodeItem = theNode.item; //use the item to find the insertion point
+        if(item.getKey().compareTo(nodeItem.getKey())  < 0 ){//go left
+            newSubTree = insertItem(theNode.left, item); //recurive call go left
+            theNode.left = newSubTree;
+        }
+        else{//go right (item key is equal or greater than curr Node)
+            newSubTree = insertItem(theNode.right, item);
+            theNode.right = newSubTree;
+        }
+        return theNode;
+    }
+
+
+    public T retrieve(KT searchKey){
+        return retrieveItem(root, searchKey);
+    }
+
+    private T retrieveItem(TreeNode<T> theNode, KT searchKey) {
+        T treeItem;
+        if(theNode == null){
+            treeItem = null;
+        }
+        else{
+            T nodeItem = theNode.item;
+            if(searchKey.compareTo(nodeItem.getKey()) == 0 ){//found
+                treeItem = theNode.item;
+            }
+            else if( searchKey.compareTo(nodeItem.getKey()) < 0){//go left
+                treeItem = retrieveItem(theNode.left, searchKey);//recursive call
+            }
+            else{
+                treeItem = retrieveItem(theNode.right, searchKey);//recursive call
+            }
+        }
+        return treeItem;
+    }
+
+
+    @Override
+    public void delete(T item){
+
+    }
+
+}

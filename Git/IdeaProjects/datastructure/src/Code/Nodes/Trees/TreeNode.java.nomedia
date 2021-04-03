@@ -1,0 +1,45 @@
+package Code.Nodes.Trees;
+
+public class TreeNode<T> {
+
+    protected T item;
+    protected TreeNode<T> left;
+    protected TreeNode<T> right;
+
+
+    public TreeNode(T item){//leaf or no children
+        this.item = item;
+        left = null;
+        right = null;
+    }
+
+    public TreeNode(T item, TreeNode<T> left, TreeNode<T> right){//leaf with children
+        this.item = item;
+        this.left = left;
+        this.right = right;
+    }
+    
+    public void setItem(T item) {
+        this.item = item;
+    }
+
+    public T getData() {
+        return item;
+    }
+
+    public void setLeft(TreeNode<T> left) {
+        this.left = left;
+    }
+
+    public TreeNode<T> getLeft() {
+        return left;
+    }
+
+    public void setRight(TreeNode<T> right) {
+        this.right = right;
+    }
+
+    public TreeNode<T> getRight() {
+        return right;
+    }
+}

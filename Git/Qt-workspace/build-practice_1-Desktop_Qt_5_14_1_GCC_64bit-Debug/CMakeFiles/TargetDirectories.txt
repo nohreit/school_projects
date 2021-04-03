@@ -1,0 +1,3 @@
+/home/nohreit/Git/Qt-workspace/build-practice_1-Desktop_Qt_5_14_1_GCC_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/home/nohreit/Git/Qt-workspace/build-practice_1-Desktop_Qt_5_14_1_GCC_64bit-Debug/CMakeFiles/edit_cache.dir
+/home/nohreit/Git/Qt-workspace/build-practice_1-Desktop_Qt_5_14_1_GCC_64bit-Debug/CMakeFiles/practice_1.dir
